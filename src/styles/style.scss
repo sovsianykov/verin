@@ -1,0 +1,43 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+@import "./header.scss";
+@import "./section1.scss";
+ @import "./section2.scss";
+@import "./mixins.scss";
+@import "./section3";
+@import "./section4";
+@import "./section5";
+
+
+@font-face {
+  font-family:  GothamPro ;
+  src: url(../fonts/gothampro-black.ttf);
+} 
+@font-face {
+  font-family:  GothamProS ;
+  src: url(../fonts/gothampro-medium.ttf);
+
+} 
+@font-face {
+  font-family: OpenSans;
+  src :url(../fonts/OpenSans-Regular.ttf)
+}
+@font-face {
+  font-family: OpenSansb;
+  src :url(../fonts/OpenSans-Bold.ttf)
+}
+@font-face {
+  font-family: OpenSansm;
+  src :url(../fonts/OpenSans-Light.ttf)
+}
+@font-face {
+  font-family: prata;
+  src :url(../fonts/Prata-Regular.ttf)
+}
+img {
+  height: 100%;
+  display: block;
+}

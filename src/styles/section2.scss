@@ -1,0 +1,43 @@
+.sectionB	{
+	@import "./mixins.scss";
+
+	width: 100%;
+	height: 1491px;
+	background-color:#315873 ;
+	@include flexCenter(column);
+	h3 {
+		margin-top: 80px;
+		width: 352px;
+		height: 38px;
+		font-family: OpenSans;
+		font-size: 50px;
+		font-weight: bold;
+		font-stretch: normal;
+		letter-spacing: -2px;
+		text-align: center;
+		color: white;
+	}
+	hr {
+		margin-top: 80px;
+		width: 200px;
+		height: 3px;
+		color: #fffdfd;
+    		background: #ffffff;
+
+	}
+	h4 {
+		margin-top: 80px;
+		width: 918px;
+		height: 37px;
+		font-family: OpenSans;
+		font-size: 36px;
+		font-weight: bold;
+		font-stretch: normal;
+		font-style: normal;
+		line-height: 1.39;
+		letter-spacing: normal;
+		text-align: center;
+		color: #ffffff;
+	}
+
+}

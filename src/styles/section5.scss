@@ -1,0 +1,43 @@
+.sectionD {
+  width: 100%;
+  min-height: 1878px;
+  @include flexCenter(column);
+  background: #f3dac4;
+  position: relative;
+
+  .mainwr {
+    width: 1138px;
+    height: 1000px;
+    .wrap {
+      margin: 0 auto;
+      height: 1000px;
+      overflow: hidden;
+      .picslide {
+        width: 374px;
+        height: 1000px;
+        display: inline-block;
+        .picsl {
+          width: 374px;
+          height: 365px;
+
+        }
+        button {
+          width: 20px;
+          height: 20px;
+          border-radius:30px ;
+          position: absolute;
+          z-index: 2;
+          background: #000;
+          &.l{
+            left: -30px;
+            top: 10px;
+          }
+          &.r{
+            right: -30px;
+            top: 10px;
+          }
+        }
+      }
+    }
+  }
+}

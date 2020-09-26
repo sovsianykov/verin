@@ -1,0 +1,71 @@
+.sectionC {
+  width: 100%;
+  min-height: 900px;
+  @include flexCenter(column);
+
+  h3 {
+    margin-top: 80px;
+    margin-bottom: 80px;
+
+    height: 38px;
+    font-family: OpenSans;
+    font-size: 50px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 0.6;
+    letter-spacing: -2px;
+    text-align: center;
+    color: #000000;
+
+  }
+  hr  {
+    width: 300px;
+    height: 2px;
+    background: #000;
+  }
+  .contentwrap {
+    margin-top: 60px;
+    display:flex;
+    width: 70%;
+    min-height: 300px;
+    justify-content: space-between;
+    .clmn {
+      width: 17%;
+      @include flexCenter(column);
+
+      //border: 1px solid black;
+      img {
+        display: block;
+        width: 150px;
+        height: 150px;
+      }
+      h4{
+        margin-top: 30px;
+        height: 25px;
+        font-family: OpenSans;
+        font-size: 20px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.25;
+        letter-spacing: -0.96px;
+        color: #000000;
+
+      }
+      p{
+        padding: 10px;
+        font-family: Prata;
+        font-size: 14px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.88;
+        letter-spacing: 0.64px;
+        text-align: left;
+        color: #000000;
+      }
+    }
+  }
+
+}
