@@ -246,7 +246,7 @@ We keep the focus on IT specialists only.
     var pos = 0;
     var l = ($('.picslide').length - 3) * step;
     l *= -1;
-    $('.l').click(toLeft);
+    $(document).mousemove(toLeft);
     $('.r').click(toRight);
     function toLeft() {
         if (pos > l) {
@@ -268,8 +268,9 @@ We keep the focus on IT specialists only.
         }
 
     }
+
     function slide(x) {
-        $('#one').animate({ 'margin-left': x });
+        $('#one').animate({ 'margin-left': x }, 7000);
 
     }
 </script>
