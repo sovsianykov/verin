@@ -1,12 +1,11 @@
 .sectionB	{
-	@import "./mixins.scss";
 
 	width: 100%;
 	height: 1491px;
 	background-color:#315873 ;
 	@include flexCenter(column);
 	h3 {
-		margin-top: 80px;
+		//margin-top: 80px;
 		width: 352px;
 		height: 38px;
 		font-family: OpenSans;

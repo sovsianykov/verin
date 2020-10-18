@@ -8,6 +8,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/style.css">
     <script src="js/jquery.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
     <title>Verin</title>
 </head>
 <body>
@@ -208,6 +211,7 @@ We keep the focus on IT specialists only.
     </div>
 </div>
 <div class="sectionD">
+    <h3>PORTFOLIO</h3>
     <hr>
     <p id="upp">
         Managers, candidates, and companies all over the world seek to find reliable, consistent and convenient recruitment.
@@ -215,21 +219,23 @@ We keep the focus on IT specialists only.
         Working tirelessly to maintain relationships with managers and candidates, Verin Recruitment has set a goal
         to build a better recruitment service.
     </p>
-    <div class="mainwr">
-        <button class="l">left</button>
-        <button class="r">right</button>
-        <div class="wrap">
+    <div class="slider">
+
+        <ul class="wrap">
 
 
-            <div class="picslide" id="one"><div class="picsl"><img src="img/OlgaMay_Pic.jpg" alt=""></div></div>
-            <div class="picslide" ><div class="picsl"><img src="img/VasKamyshanov_Pic.jpg" alt=""></div></div>
-            <div class="picslide" ><div class="picsl"><img src="img/TimurEgorov_Pic.jpg" alt=""></div></div>
-            <div class="picslide" ><div class="picsl"><img src="img/StanislavZemlyakov_Pic1.png" alt=""></div></div>
-            <div class="picslide" ><div class="picsl"><img src="img/BogdanOsynnyi_Pic.jpg" alt=""></div></div>
-            <div class="picslide" ><div class="picsl"><img src="img/Bilenkis_Pic.jpg" alt=""></div></div>
+            <li class="picslide"><div class="picsl"><img src="img/OlgaMay_Pic.jpg" alt="">
+            </div>
+
+        </li>
+            <li li class="picslide" ><div class="picsl"><img src="img/VasKamyshanov_Pic.jpg" alt=""></div></li>
+            <li class="picslide" ><div class="picsl"><img src="img/TimurEgorov_Pic.jpg" alt=""></div></li >
+            <li  class="picslide" ><div class="picsl"><img src="img/StanislavZemlyakov_Pic1.png" alt=""></div></li >
+            <li  class="picslide" ><div class="picsl"><img src="img/BogdanOsynnyi_Pic.jpg" alt=""></div></li >
+            <li  class="picslide" ><div class="picsl"><img src="img/Bilenkis_Pic.jpg" alt=""></div></li >
 
 
-        </div>
+            </ul>
 
     </div>
 
@@ -237,42 +243,80 @@ We keep the focus on IT specialists only.
 
 
 <script>
+    $(document).ready(function(){
+	$('.slider ul').bxSlider({
+		pager: true,
+		controls: false,
+		auto: true,
+		pause: 10000,
+		minSlides: 3,
+		maxSlides: 3,
+		slideMargin: 20,        
+		slideWidth: 236
+	});
+});
 
 
 
 
-    const step = 382;
 
-    var pos = 0;
-    var l = ($('.picslide').length - 3) * step;
-    l *= -1;
-    $(document).mousemove(toLeft);
-    $('.r').click(toRight);
-    function toLeft() {
-        if (pos > l) {
-            pos -= step;
-            slide(pos);
-        } else {
-            pos = 0;
-            slide(pos);
-        }
 
-    }
-    function toRight() {
-        if (pos < 0) {
-            pos += step;
-            slide(pos);
-        } else {
-            pos = l;
-            slide(pos);
-        }
 
-    }
 
-    function slide(x) {
-        $('#one').animate({ 'margin-left': x }, 7000);
 
-    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    // let h = 1;
+    // // let move =  setInterval(function () {
+    //     $('.picslide').animate( {width : "30%"     }, 3000);
+
+    //     $('.picslide').hover(function () {
+    //         h = 0;
+    //     });
+
+    //     if (h) {
+    //         let first = $('.picslide:first');
+    //         let last = $('.picslide:last');
+    //         $(last).after(first);
+
+    //     }
+    //     $('.picslide').mouseleave(function () {
+    //         h = 1;
+    //     });
+
+
+
+
+    //     $('.picslide').animate( {width : "29%"     }, 1000);
+
+
+    // // }, 6000 );
+
+
+
+
 </script>
  </body>
 

@@ -3,9 +3,10 @@
   margin: 0;
   box-sizing: border-box;
 }
+@import "./variables";
 @import "./header.scss";
 @import "./section1.scss";
- @import "./section2.scss";
+ //@import "./section2.scss";
 @import "./mixins.scss";
 @import "./section3";
 @import "./section4";
@@ -20,7 +21,7 @@
   font-family:  GothamProS ;
   src: url(../fonts/gothampro-medium.ttf);
 
-} 
+}
 @font-face {
   font-family: OpenSans;
   src :url(../fonts/OpenSans-Regular.ttf)
@@ -38,6 +39,5 @@
   src :url(../fonts/Prata-Regular.ttf)
 }
 img {
-  height: 100%;
   display: block;
 }

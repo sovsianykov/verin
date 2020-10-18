@@ -4,11 +4,10 @@
   @include flexCenter(column);
 
   h3 {
-    margin-top: 80px;
-    margin-bottom: 80px;
+    margin-top: $title-padding;
 
     height: 38px;
-    font-family: OpenSans;
+    font-family: OpenSansb;
     font-size: 50px;
     font-weight: bold;
     font-stretch: normal;
@@ -20,7 +19,9 @@
 
   }
   hr  {
-    width: 300px;
+    margin-top: $title-padding;
+
+    width: $hr-with;
     height: 2px;
     background: #000;
   }

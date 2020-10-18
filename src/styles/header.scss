@@ -226,7 +226,7 @@ header {
 			justify-content: space-between;
 			.about {
 					
-					margin-top: 149px;
+					margin-top: 110px;
 					width: 237px;
 					height: 38px;
 					font-family: OpenSans;
@@ -241,7 +241,7 @@ header {
 				 
 			}
 			hr {
-				margin-top: 100px;
+				margin-top: $title-padding;
 				width: 165px;
 				height: 2px;
 			}
