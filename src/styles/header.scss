@@ -5,7 +5,11 @@ header {
 		width: 100%;
 		height: 187px;
 		display: block;
-		margin: 0 auto; 
+		margin: 0 auto;
+		position: fixed;
+		top: 0;
+		background: white;
+		z-index: 55;
 		.navcontent{
 			margin: 0 auto;
 			width: 1140px;
@@ -96,10 +100,13 @@ header {
 							text-decoration: none;
 						border: 2px solid white;
 
-							&:hover {
+							&:active {
 						border: 2px solid #166b8c;
+								box-shadow: inset 0 0 1px rgba(0, 0, 0, .1);
+
 
 							}
+
 						}
 					}
 				}
@@ -113,7 +120,7 @@ header {
 		width: 100%;
 		height: 948px;
 		background: url('../img/bg1.png');
-		margin: 0 auto;
+		margin: 187px auto;
 		background-size: cover;
 		display: flex;
 		flex-direction: column;

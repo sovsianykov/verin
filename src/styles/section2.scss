@@ -17,9 +17,9 @@
 		color: white;
 	}
 	hr {
-		margin-top: 80px;
-		width: 200px;
-		height: 3px;
+		margin-top: $title-padding;
+		width: $hr-with;
+		height: 2px;
 		color: #fffdfd;
     		background: #ffffff;
 
