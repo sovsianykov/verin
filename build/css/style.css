@@ -559,18 +559,17 @@ header {
         flex-direction: column;
         margin: 1%; }
         .sectionD .mainwr .wrap .picslide h4 {
-          margin-top: 50px;
-          margin-left: 20px;
-          height: 74px;
+          margin-top: 20%;
+          margin-left: 17px;
           font-family: OpenSansb;
           font-size: 26px;
           letter-spacing: -1.04px;
           color: #656363; }
         .sectionD .mainwr .wrap .picslide h3 {
-          margin-top: -35px;
+          margin-top: 2%;
           margin-left: 20px;
           font-family: OpenSans;
-          font-size: 30px;
+          font-size: 25px;
           font-weight: bold;
           font-stretch: normal;
           font-style: normal;
@@ -593,8 +592,7 @@ header {
           text-align: left;
           color: #000000; }
         .sectionD .mainwr .wrap .picslide .picsl {
-          width: 100%;
-          height: 310px; }
+          width: 100%; }
           .sectionD .mainwr .wrap .picslide .picsl img {
             width: 100%; }
 
